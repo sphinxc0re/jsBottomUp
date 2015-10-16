@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+
+\usepackage[utf8]{inputenc}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short title]{JavaScript for Unicorns} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Julian Laubstein} % Your name
+\institute[UCLA] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+\medskip
+\textit{julianlaubstein@yahoo.de} % Your email address
+}
+\date{Labortage 2015} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Inhaltsverzeichnis} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Warum JavaScript keine schöne Sprache ist} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\begin{frame}
+\Huge{
+\centerline{Warum JavaScript}
+\centerline{keine schöne Sprache ist}
+}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Dynamische Typisierung}
+\begin{itemize}
+\item JavaScript ist nicht typsicher
+\\
+\includegraphics[scale=0.4]{assets/type-safety.png}
+\item JavaScript benutzt duck-typing
+\\
+\includegraphics[scale=0.2]{assets/duck.png}
+\end{itemize}
+\end{frame}
+
+
+
+%----------------------
+
+\begin{frame}
+\frametitle{Keine \textit{richtige} Objekt Orientierung}
+\begin{itemize}
+\item In JavaScript gibt es nur Prototypenbasierte Objekt Orientierung
+\includegraphics[scale=0.3]{assets/noclassesES5.png}
+\item Und auf bessere OOP kann man nur hoffen
+\includegraphics[scale=0.3]{assets/noclassesES6.png}
+\end{itemize}
+\end{frame}
+
+%----------------------
+
+\begin{frame}
+\frametitle{Keine konsistenten scopes}
+\begin{itemize}
+\item JavaScript Klassen haben kein konsistentes 'this'
+\\
+\includegraphics[scale=0.31]{assets/conthis.png}
+\end{itemize}
+\end{frame}
+
+%----------------------
+
+\section{Was ihr an JavaScript mögen könntet} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\Huge{
+\centerline{Was ihr an JavaScript}
+\centerline{mögen könntet}
+}
+\end{frame}
+
+%----------------------
+
+\begin{frame}
+\frametitle{ALLES ist ein Objekt}
+\begin{itemize}
+\item Objekt?
+\\
+\includegraphics[scale=0.3]{assets/everyobject_object.png}
+\item Assoziatives Array?
+\includegraphics[scale=0.3]{assets/everyobject_asarray.png}
+\end{itemize}
+\end{frame}
+
+%----------------------
+
+\begin{frame}
+\frametitle{Alles ist ein Objekt}
+\begin{itemize}
+\item Objekt
+\\
+\includegraphics[scale=0.3]{assets/everyobject_object.png}
+\item Assoziatives Array
+\includegraphics[scale=0.3]{assets/everyobject_asarray.png}
+\end{itemize}
+\end{frame}
+
+%----------------------
+
+\begin{frame}
+\frametitle{ALLES ist ein Objekt!}
+\begin{itemize}
+\item Über Objekte lässt sich iterieren
+\\
+\includegraphics[scale=0.3]{assets/everyobject_iterating.png}
+\end{itemize}
+\end{frame}
+
+%----------------------
+
+\section{Warum ich JavaScript nicht mag}
+
+\begin{frame}
+\Huge{
+\centerline{Warum \textit{ich} JavaScript}
+\centerline{nicht mag}
+}
+\end{frame}
+
+%----------------------
+
+\begin{frame}
+\Huge{\centerline{Danke für eure Aufmerksamkeit!}}
+\begin{small}
+\textit{pls clone https://github.com/SphinxC0re/js4unicorns}
+\end{small}
+\end{frame}
+
+%----------------------
+\begin{frame}
+\Huge{\centerline{Fragen? Anregungen?}}
+\end{frame}
+
+%----------------------
+
+
+
+\end{document} 
